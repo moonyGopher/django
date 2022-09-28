@@ -342,11 +342,11 @@ class ModelChoiceFieldTests(TestCase):
             (
                 "<div>"
                 '<div><label><input type="checkbox" name="name" value="%d" '
-                'data-slug="entertainment">Entertainment</label></div>'
+                'data-slug="entertainment"><span>Entertainment</span></label></div>'
                 '<div><label><input type="checkbox" name="name" value="%d" '
-                'data-slug="test">A test</label></div>'
+                'data-slug="test"><span>A test</span></label></div>'
                 '<div><label><input type="checkbox" name="name" value="%d" '
-                'data-slug="third-test">Third</label></div>'
+                'data-slug="third-test"><span>Third</span></label></div>'
                 "</div>"
             )
             % (self.c1.pk, self.c2.pk, self.c3.pk),
@@ -388,13 +388,13 @@ class ModelChoiceFieldTests(TestCase):
             """
             <div><div>
             <label><input type="checkbox" name="name" value="%d"
-                data-slug="entertainment">Entertainment
+                data-slug="entertainment"><span>Entertainment</span>
             </label></div>
             <div><label>
-            <input type="checkbox" name="name" value="%d" data-slug="test">A test
+            <input type="checkbox" name="name" value="%d" data-slug="test"><span>A test</span>
             </label></div>
             <div><label>
-            <input type="checkbox" name="name" value="%d" data-slug="third-test">Third
+            <input type="checkbox" name="name" value="%d" data-slug="third-test"><span>Third</span>
             </label></div></div>
             """
             % (self.c1.pk, self.c2.pk, self.c3.pk),
